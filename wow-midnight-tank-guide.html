@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Midnight Tanking Guide - Stop Dying in Season 1 | Koroboost Guides</title>
+    <meta name="description" content="Complete tanking guide for WoW Midnight Season 1. Tank tier list, cooldown rotation, stat priority, kiting strategies, and how to survive raids and M+ in 2026.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; }
+        .hero { background: linear-gradient(135deg, #1a0a2e 0%, #0d1117 50%, #0a1628 100%); padding: 60px 20px; text-align: center; border-bottom: 1px solid #2d1b69; }
+        .hero h1 { font-size: 2.5em; color: #c084fc; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; color: #a0a0b0; max-width: 700px; margin: 0 auto; }
+        .hero a { color: #a78bfa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h2 { font-size: 1.6em; color: #c084fc; margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #2d1b69; }
+        h3 { font-size: 1.2em; color: #e0e0e0; margin: 20px 0 10px; }
+        p { margin-bottom: 15px; color: #c0c0c8; }
+        a { color: #a78bfa; }
+        .tip-box { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 20px; margin-bottom: 15px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #a78bfa; text-decoration: none; font-size: 0.95em; }
+        .back-link:hover { text-decoration: underline; }
+        .cta { background: linear-gradient(135deg, #7c3aed, #a78bfa); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: 600; margin-top: 20px; }
+        .cta:hover { opacity: 0.9; }
+        .cta-box { text-align: center; margin: 40px 0; }
+        footer { text-align: center; padding: 40px 20px; color: #6e7681; border-top: 1px solid #21262d; }
+        footer a { color: #a78bfa; text-decoration: none; }
+        ul, ol { margin: 0 0 15px 25px; color: #c0c0c8; }
+        li { margin-bottom: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #30363d; }
+        th { color: #c084fc; font-weight: 600; }
+        td { color: #c0c0c8; }
+        .tier-s { color: #fbbf24; font-weight: bold; }
+        .tier-a { color: #a78bfa; font-weight: bold; }
+        .tier-b { color: #6b7280; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>WoW Midnight Tanking Guide</h1>
+    <p>How to stop dying in Season 1 raids and M+. Tank tier list, cooldown management, and the mistakes that get you killed.</p>
+</div>
+
+<div class="container">
+    <a href="index.html" class="back-link">&larr; Back to All Guides</a>
+
+    <p>Tanking in Midnight is a completely different animal compared to Dragonflight. Blizzard went full sadist with the damage profile this expansion. Every dungeon boss has some kind of tankbuster that will one-shot you if you don't know the timing. Raid bosses rotate between heavy physical damage and magic bursts that ignore your armor entirely.</p>
+
+    <p>I've been tanking since Cataclysm, and this is probably the hardest entry point for tanks we've had in years. If you're wiping in +10s and wondering what you're doing wrong, this guide is for you.</p>
+
+    <h2>The Midnight Tank Tier List</h2>
+
+    <table>
+        <tr><th>Tier</th><th>Spec</th><th>Strengths</th><th>Weaknesses</th></tr>
+        <tr>
+            <td><span class="tier-s">S</span></td>
+            <td>Blood Death Knight</td>
+            <td>Self-healing is absurd. Death Strike after a big hit basically full heals you. In M+ you're practically a second healer.</td>
+            <td>Zero mobility. You're a refrigerator that moves at walking speed.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-s">S</span></td>
+            <td>Protection Paladin</td>
+            <td>Word of Glory buffed, Divine Shield, new Midnight talent tier gives massive absorb every 45 seconds. Best for progression raiding.</td>
+            <td>Lower AoE damage than other tanks in easy content.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-a">A</span></td>
+            <td>Brewmaster Monk</td>
+            <td>Stagger is always strong. Good Brewmasters feel immortal.</td>
+            <td>High skill floor. Bad Brewmasters die just as fast as anyone else.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-a">A</span></td>
+            <td>Guardian Druid</td>
+            <td>Ironfur stacking with new bear talents makes you a wall of health. Best "I just want to survive" pick.</td>
+            <td>Not flashy, not exciting. Lower damage output.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-b">B</span></td>
+            <td>Protection Warrior</td>
+            <td>Shield Block is great for physical damage.</td>
+            <td>Midnight has tons of magic damage. Shield Spell on 30s CD leaves gaps.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-b">B</span></td>
+            <td>Vengeance Demon Hunter</td>
+            <td>Unmatched mobility, great AoE threat with Sigil of Flame.</td>
+            <td>Short mitigation windows. Mess up Demon Spikes timing and you're dead.</td>
+        </tr>
+    </table>
+
+    <h2>The #1 Mistake Midnight Tanks Make</h2>
+
+    <p><strong>They face-tank everything.</strong></p>
+
+    <p>Midnight bosses are designed around kiting. Not all of them, but enough that if you're standing still eating every melee hit, you're doing it wrong.</p>
+
+    <div class="tip-box">
+        <h3>The Midnight Boss Damage Pattern</h3>
+        <ol>
+            <li>Boss does normal melees for 8-10 seconds</li>
+            <li>Boss channels a heavy ability (2 second cast)</li>
+            <li>The heavy ability does 200-400% of a normal melee</li>
+            <li>Boss returns to normal melees</li>
+        </ol>
+        <p style="margin-top: 10px; margin-bottom: 0;"><strong>Your job:</strong> Have active mitigation up for step 3. If your cooldowns are down, step out of melee during the channel. The boss will follow you, and you dodge the big hit entirely. This isn't cheesing. Watch any world-first stream and you'll see tanks doing exactly this.</p>
+    </div>
+
+    <h2>Defensive Cooldown Rotation</h2>
+
+    <p>Stop blowing all your cooldowns on pull. Seriously. Here's the framework:</p>
+
+    <table>
+        <tr><th>Timing</th><th>What to Use</th><th>Why</th></tr>
+        <tr><td>Pull (0-10s)</td><td>Weakest active mitigation (Shield Block, Ironfur)</td><td>Save the big stuff for when you actually need it</td></tr>
+        <tr><td>First big hit (10-15s)</td><td>Medium cooldown (Shield Wall, Survival Instincts)</td><td>The first tankbuster is usually the most dangerous</td></tr>
+        <tr><td>Second big hit (25-30s)</td><td>Short cooldown + trinket</td><td>Stack defensives to survive overlaps</td></tr>
+        <tr><td>Third big hit (40-50s)</td><td>First cooldowns should be back up</td><td>The rotation loops cleanly</td></tr>
+    </table>
+
+    <p><strong>The cardinal sin of tanking:</strong> Using your big cooldown on pull "just in case" and then having nothing when the actual tankbuster hits at the 15-second mark. Every dead tank I've rezzed in raids died because they burned their CDs early.</p>
+
+    <h2>Trash Tanking: Where Keys Actually Die</h2>
+
+    <p>Boss mechanics are scripted. You can learn them. Trash is chaos. Here are the rules:</p>
+
+    <div class="tip-box">
+        <h3>Rule 1: Pull With a Plan</h3>
+        <p>Before you grab a pack, know: how many mobs, what casts need interrupting, whether the pack has a stacking debuff, and where the NEXT pack is so you don't accidentally pull it.</p>
+    </div>
+
+    <div class="tip-box">
+        <h3>Rule 2: Face Mobs Away From Your Group</h3>
+        <p>Frontal cone attacks exist on most Midnight trash. If your DPS keeps dying to "unavoidable" damage, check if you're aiming the mobs at them.</p>
+    </div>
+
+    <div class="tip-box">
+        <h3>Rule 3: Interrupt Rotation is YOUR Responsibility</h3>
+        <p>Assign interrupts before the key starts. "Rogue kick 1st, Shaman 2nd, I'll grab 3rd." If nobody interrupts, the cast goes off, and it's usually a fear or a heal that ruins the pull.</p>
+    </div>
+
+    <div class="tip-box">
+        <h3>Rule 4: Know When to Kite</h3>
+        <p>If you have 3+ stacks of any bleed debuff and your healer is struggling, kite. Run in a circle, keep threat with ranged abilities, let stacks fall off. This is not cowardice. This is tanking.</p>
+    </div>
+
+    <h2>Stat Priority for Tanks</h2>
+
+    <h3>For survivability (progression, hard content)</h3>
+    <ol>
+        <li><strong>Item Level</strong> -- more armor, more stamina. This is king.</li>
+        <li><strong>Versatility</strong> -- flat damage reduction, no cap, always useful</li>
+        <li><strong>Haste</strong> -- shorter cooldowns on active mitigation</li>
+        <li><strong>Mastery</strong> -- spec-dependent, usually decent</li>
+        <li><strong>Crit</strong> -- last priority for survival</li>
+    </ol>
+
+    <h3>For M+ damage (farming easy keys)</h3>
+    <ol>
+        <li><strong>Haste</strong> -- more GCDs = more AoE damage</li>
+        <li><strong>Crit</strong> -- bigger crits on AoE abilities</li>
+        <li><strong>Versatility</strong> -- still good for both damage and survivability</li>
+        <li><strong>Mastery</strong> -- varies wildly by spec</li>
+    </ol>
+
+    <p><strong>The rule:</strong> If you're dying, go full survivability. If you're bored, add damage stats. Don't try to parse as a tank while your healer is having a panic attack.</p>
+
+    <h2>Enchants and Consumables for Tanks</h2>
+
+    <p>Tanks need different enchants than DPS. Stop copying your DPS friend's setup.</p>
+
+    <table>
+        <tr><th>Slot</th><th>Enchant</th><th>Notes</th></tr>
+        <tr><td>Weapon</td><td>Stamina enchant</td><td>Not the DPS one</td></tr>
+        <tr><td>Chest</td><td>+HP or +Versatility</td><td>NOT +Stats (that's DPS)</td></tr>
+        <tr><td>Rings (both)</td><td>Versatility</td><td>Flat DR on both rings</td></tr>
+        <tr><td>Boots</td><td>Speed</td><td>Mobility saves lives in M+</td></tr>
+        <tr><td>Legs</td><td>Stamina/Armor kit</td><td>Extra EHP for progression</td></tr>
+    </table>
+
+    <p><strong>Consumables:</strong> Stamina flask always. Versatility food (NOT primary stat feast). Armor potion for big pulls, health pot for emergencies. Always carry a Healthstone.</p>
+
+    <h2>When to Call for Help</h2>
+
+    <p>Sometimes the key level is too high. Sometimes the healer is undergeared. Sometimes the DPS is too low and trash lives long enough to stack debuffs that kill you. There's no shame in saying "this key level is above my current gear" and dropping down.</p>
+
+    <p>If you want to see how high-level tanks handle Midnight content, <a href="https://koroboost.com/wow-midnight/raids">watching experienced players tank raid content</a> is one of the fastest ways to learn positioning, cooldown timing, and pull strategies. You pick up more from one run than from 10 YouTube videos.</p>
+
+    <p>Same goes for M+. If you're stuck on a key level, <a href="https://koroboost.com/wow-midnight/mythic-plus">running alongside players who time higher keys</a> shows you the routes and pull sizes that actually work.</p>
+
+    <div class="cta-box">
+        <a href="https://koroboost.com/wow-midnight/mythic-plus" class="cta">Browse M+ Boost Packages</a>
+    </div>
+
+    <h2>The Tanking Mindset</h2>
+
+    <p>Your job isn't to never take damage. Your job is to take damage in a predictable, manageable way that your healer can handle.</p>
+
+    <p>Plan your cooldowns. Communicate with your healer. Interrupt everything. And when things go sideways, kite. Tanks who communicate live. Tanks who stay silent die.</p>
+</div>
+
+<footer>
+    <p>&copy; 2026 <a href="https://koroboost.com">Koroboost</a> &mdash; Professional WoW & Diablo IV Services</p>
+    <p style="margin-top: 8px;"><a href="index.html">All Guides</a></p>
+</footer>
+
+</body>
+</html>
