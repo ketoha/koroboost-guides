@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Midnight RBG Guide - How to Actually Win Rated Battlegrounds | Koroboost Guides</title>
+    <meta name="description" content="Complete Rated Battlegrounds guide for WoW Midnight Season 1. Meta comps, map strategies, communication tips, and the path from 0 to 1800 rating.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; }
+        .hero { background: linear-gradient(135deg, #1a0a2e 0%, #0d1117 50%, #0a1628 100%); padding: 60px 20px; text-align: center; border-bottom: 1px solid #2d1b69; }
+        .hero h1 { font-size: 2.5em; color: #c084fc; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; color: #a0a0b0; max-width: 700px; margin: 0 auto; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h2 { font-size: 1.6em; color: #c084fc; margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #2d1b69; }
+        h3 { font-size: 1.2em; color: #e0e0e0; margin: 20px 0 10px; }
+        p { margin-bottom: 15px; color: #c0c0c8; }
+        a { color: #a78bfa; }
+        .tip-box { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 20px; margin-bottom: 15px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #a78bfa; text-decoration: none; font-size: 0.95em; }
+        .back-link:hover { text-decoration: underline; }
+        .cta { background: linear-gradient(135deg, #7c3aed, #a78bfa); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: 600; margin-top: 20px; }
+        .cta:hover { opacity: 0.9; }
+        .cta-box { text-align: center; margin: 40px 0; }
+        footer { text-align: center; padding: 40px 20px; color: #6e7681; border-top: 1px solid #21262d; }
+        footer a { color: #a78bfa; text-decoration: none; }
+        ul, ol { margin: 0 0 15px 25px; color: #c0c0c8; }
+        li { margin-bottom: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #30363d; }
+        th { color: #c084fc; font-weight: 600; }
+        td { color: #c0c0c8; }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>WoW Midnight RBG Guide</h1>
+    <p>How to actually win Rated Battlegrounds in Season 1. Comps, map strategies, communication, and the path to 1800.</p>
+</div>
+
+<div class="container">
+    <a href="index.html" class="back-link">&larr; Back to All Guides</a>
+
+    <p>Rated Battlegrounds are the most underrated PvP content in Midnight. Everyone's obsessed with arena rating, but RBGs give you the same gear, faster honor, and way less stress per match. The problem? Nobody knows how to play them properly.</p>
+
+    <h2>RBGs vs Random BGs: Why Everything You Know is Wrong</h2>
+
+    <p>In random BGs, you can solo carry. In rated BGs, none of that works. The enemy team is coordinated, they have voice comms, they have a strategy. And if your team doesn't, you lose.</p>
+
+    <div class="tip-box">
+        <h3>Key Differences</h3>
+        <ul>
+            <li><strong>Coordination > Individual skill.</strong> A team of 1800 players who communicate beats 2200 players who don't talk.</li>
+            <li><strong>Roles are assigned.</strong> You're the base sitter, target caller, flag carrier, or spin team. No role = dead weight.</li>
+            <li><strong>Map control is everything.</strong> Holding 2 bases AND pressuring the 3rd is how you win. Passive defense loses games.</li>
+            <li><strong>Comp matters.</strong> FC, target caller, healers who survive focus, DPS who burst on command.</li>
+        </ul>
+    </div>
+
+    <h2>The Meta Comp for RBGs</h2>
+
+    <table>
+        <tr><th>Role</th><th>Players</th><th>Best Specs</th><th>Job</th></tr>
+        <tr><td>Flag Carrier</td><td>1</td><td>Blood DK, Guardian Druid</td><td>Grab flag, survive, kite, use defensives</td></tr>
+        <tr><td>Healers</td><td>3</td><td>Resto Druid (mandatory), Holy Paladin (mandatory), Evoker/Disc flex</td><td>Keep team alive, survive focus</td></tr>
+        <tr><td>Target Caller</td><td>1</td><td>Ret Paladin, Ele Shaman, any ranged with awareness</td><td>Call targets, push/retreat decisions</td></tr>
+        <tr><td>DPS</td><td>5-6</td><td>2 melee (Rogue, DH, Warrior) + 2 ranged (Mage, Lock, Boomkin) + flex</td><td>Kill on command, peel for healers</td></tr>
+        <tr><td>Base Sitter</td><td>1 (rotates)</td><td>Rogue, Feral Druid (stealth)</td><td>Guard base, call inc, delay until help arrives</td></tr>
+    </table>
+
+    <h2>Map Strategies</h2>
+
+    <h3>Warsong Gulch / Twin Peaks (Flag Maps)</h3>
+    <div class="tip-box">
+        <ol>
+            <li>FC grabs flag immediately with 2 healers escorting</li>
+            <li>Kill team (3-4 DPS + 1 healer) rushes enemy FC</li>
+            <li>If your FC has flag and theirs is dead, TURTLE. Protect FC until cap.</li>
+            <li>If both FCs have flags, whoever kills enemy FC first wins</li>
+        </ol>
+        <p style="margin-top: 10px; margin-bottom: 0;"><strong>Common mistake:</strong> Everyone chasing enemy FC, leaving your FC alone. Your FC dies, they cap, you lose 0-3.</p>
+    </div>
+
+    <h3>Arathi Basin / Deepwind Gorge (Node Maps)</h3>
+    <div class="tip-box">
+        <ol>
+            <li>Open with 3-way split: 4-5 to each of your two closest bases, 1-2 at safe base</li>
+            <li>Cap two bases, then push a third as a full team</li>
+            <li>NEVER fight mid unless mid IS a base. Fighting mid is a meme.</li>
+            <li>Rotate as a group. Don't trickle in 1 by 1.</li>
+        </ol>
+        <p style="margin-top: 10px; margin-bottom: 0;"><strong>Common mistake:</strong> Splitting evenly across all bases. 2 people at each base = you lose every fight.</p>
+    </div>
+
+    <h3>Silvershard Mines (Cart Map)</h3>
+    <div class="tip-box">
+        <ol>
+            <li>Control the middle cart (spawns first, worth most time)</li>
+            <li>Send 2-3 to contest side carts</li>
+            <li>Win mid = win game</li>
+            <li>If you lose mid, pivot to side cart immediately</li>
+        </ol>
+    </div>
+
+    <h3>Temple of Kotmogu (Orb Map)</h3>
+    <div class="tip-box">
+        <ol>
+            <li>Grab all 4 orbs immediately (assign 4 tanky players pre-game)</li>
+            <li>Orb carriers stack center with healers for max points</li>
+            <li>DPS creates wall around orb carriers</li>
+            <li>If an orb carrier dies, grab dropped orb INSTANTLY</li>
+        </ol>
+    </div>
+
+    <h2>Communication: The Actual Skill Gap</h2>
+
+    <p>The difference between 1400 and 1800 RBG rating isn't gear or class. It's communication.</p>
+
+    <div class="tip-box">
+        <h3>What to Call Out</h3>
+        <ul>
+            <li>"3 incoming blacksmith" (number + location)</li>
+            <li>"Kill target: [name], go now" (target + timing)</li>
+            <li>"Pop CDs on their healer, burst window" (action + when)</li>
+            <li>"Fall back to farm, they have 5 at BS" (retreat + reasoning)</li>
+        </ul>
+        <h3 style="margin-top: 15px;">What NOT to Do</h3>
+        <ul style="margin-bottom: 0;">
+            <li>Scream when you die</li>
+            <li>Blame the healer</li>
+            <li>Go silent because you're "focusing"</li>
+            <li>Argue about strategy mid-game</li>
+        </ul>
+    </div>
+
+    <p>Use Discord. Use push-to-talk. One person makes calls, everyone else shuts up unless they're calling incoming.</p>
+
+    <h2>Getting Started</h2>
+
+    <ol>
+        <li><strong>Get your PvP trinket set.</strong> CC break is mandatory.</li>
+        <li><strong>Join "yolo" RBG groups</strong> in LFG. Low-rated, no requirements. You'll lose some. You're learning.</li>
+        <li><strong>Find a regular team.</strong> After 10-20 yolo groups, find a guild or community that runs RBGs weekly.</li>
+        <li><strong>Get on voice.</strong> Discord is mandatory above 1400.</li>
+    </ol>
+
+    <p>RBGs are the most forgiving rated PvP content. One bad play doesn't instantly lose the game. You have 10 teammates. It rewards the same gear as arena.</p>
+
+    <p>If you want to experience coordinated PvP without building a team from scratch, <a href="https://koroboost.com/wow-midnight/pvp">professional PvP services</a> let you play alongside experienced RBG players who handle shot-calling while you learn maps and rotations.</p>
+
+    <div class="cta-box">
+        <a href="https://koroboost.com/wow-midnight/pvp" class="cta">Browse PvP Boost Packages</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 <a href="https://koroboost.com">Koroboost</a> &mdash; Professional WoW & Diablo IV Services</p>
+    <p style="margin-top: 8px;"><a href="index.html">All Guides</a></p>
+</footer>
+
+</body>
+</html>
