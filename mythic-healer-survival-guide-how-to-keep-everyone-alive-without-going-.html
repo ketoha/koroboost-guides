@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythic+ Healer Survival Guide: How to Keep Everyone Alive Without Going Insane | Koroboost Guides</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; }
+        .hero { background: linear-gradient(135deg, #1a0a2e 0%, #0d1117 50%, #0a1628 100%); padding: 60px 20px; text-align: center; border-bottom: 1px solid #2d1b69; }
+        .hero h1 { font-size: 2.5em; color: #c084fc; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; color: #a0a0b0; max-width: 700px; margin: 0 auto; }
+        .hero a { color: #a78bfa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h2 { font-size: 1.6em; color: #c084fc; margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #2d1b69; }
+        h3 { font-size: 1.2em; color: #e0e0e0; margin: 20px 0 10px; }
+        p { margin-bottom: 15px; color: #c0c0c8; }
+        a { color: #a78bfa; }
+        ul, ol { margin: 0 0 15px 25px; color: #c0c0c8; }
+        li { margin-bottom: 8px; }
+        .cta-box { text-align: center; margin: 40px 0; }
+        .cta { display: inline-block; background: linear-gradient(135deg, #7c3aed, #a78bfa); color: white; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        footer { text-align: center; padding: 30px; border-top: 1px solid #1a1a2e; color: #666; margin-top: 40px; }
+        footer a { color: #a78bfa; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Mythic+ Healer Survival Guide: How to Keep Everyone Alive Without Going Insane</h1>
+        <p>A guide by <a href="https://koroboost.com">Koroboost</a></p>
+    </div>
+    <div class="container">
+<p>Mythic+ healing is absolutely NOT like raid healing. In a raid, mechanics are scripted. You KNOW when the big damage is coming. You prepare.</p>
+<p>In M+, the damage is chaotic. Your tank pulls 6 mobs at once. An add that you didn't see just started casting a spell. Someone got feared into another pack. Your healer brain is exploding.</p>
+<p>The difference between a healer who thrives in M+ and one who burns out is simple: knowing WHEN to heal vs. when to ignore damage.</p>
+<p>I'm not exaggerating. Bad healers heal everything and run out of mana. Good healers let people float at 40% health and finish the run with 40% mana remaining. Same dungeon, opposite outcomes.</p>
+<h2>The Core Healer Principle: Triage Over Throughput</h2>
+<p>This is the hardest mental shift for raid healers transitioning to M+.</p>
+<p><strong>Raid healing logic:</strong> "Everyone takes damage? Heal everyone."</p>
+<p><strong>M+ healing logic:</strong> "Everyone takes damage? Ignore 2 of them, heal 1, damage-cast on the mobs."</p>
+<p>The math: If your group is taking 50% health in a second, you have SECONDS to respond. You can't heal everyone at once. You have to CHOOSE.</p>
+<p><strong>Priority order (always, no exceptions):</strong></p>
+<ul>
+<li><strong>The tank</strong> (dying tank = wipe immediately)</li>
+<li><strong>Yourself</strong> (dead healer = instant wipe)</li>
+<li><strong>Whoever is taking the most damage right now</strong></li>
+<li><strong>Everyone else</strong> (they can wait if needed)</li>
+</ul>
+<p>This ranking saves runs constantly. New healers try to save everyone equally and end up saving nobody.</p>
+<h2>Mana Management: The True Limiter</h2>
+<p>Throughput doesn't kill you in M+. Mana does.</p>
+<p><strong>Common healer complaint:</strong> "I'm running out of mana at 3 minutes into the dungeon."</p>
+<p><strong>Reality:</strong> Your spell rotation is inefficient.</p>
+<p>Here's the math:</p>
+<ul>
+<li>Average M+18 healer has ~100,000 mana</li>
+<li>Healing spell costs: 10-30% mana</li>
+<li>Mana regeneration: 5% per 5 seconds (out of combat)</li>
+<li>Trash pulls: 20-40 seconds non-stop</li>
+</ul>
+<p><strong>If you're spending 60% mana per trash pull, you'll be OOM by pull #3.</strong></p>
+<p><strong>The fix:</strong> Use more efficient healing.</p>
+<p><strong>Mana-efficient healing ranking:</strong></p>
+<ul>
+<li><strong>Heal-over-time spells</strong> (Renew, Lifebloom, etc.)</li>
+</ul>
+<p>   - Cost: 15-20% mana</p>
+<p>   - Duration: 8-12 seconds</p>
+<p>   - Value: Spreads healing across time</p>
+<p>   - Rating: BEST</p>
+<ul>
+<li><strong>Instant healing</strong> (Flash Heal, Healing Surge)</li>
+</ul>
+<p>   - Cost: 25-35% mana</p>
+<p>   - Duration: Instant</p>
+<p>   - Value: Emergency healing only</p>
+<p>   - Rating: Use when necessary</p>
+<ul>
+<li><strong>Big heal spells</strong> (Heal, Greater Heal)</li>
+</ul>
+<p>   - Cost: 40-50% mana</p>
+<p>   - Duration: 2-3 second cast</p>
+<p>   - Value: Wastes mana on overheal</p>
+<p>   - Rating: AVOID in M+</p>
+<p><strong>Strategy:</strong> Cast HoTs on the tank BEFORE damage happens. Instant heal only for emergencies. Never use big heals.</p>
+<h2>Overheal: The Silent Mana Drain</h2>
+<p>This one kills so many M+ healers: <strong>overheal</strong>.</p>
+<p><strong>What is overheal?</strong> Healing someone who's already at high health.</p>
+<p>Example:</p>
+<ul>
+<li>Tank is at 95% health</li>
+<li>You cast a heal for 30,000</li>
+<li>Tank has 25,000 health missing</li>
+<li>5,000 healing is WASTED</li>
+</ul>
+<p>Multiply that across 40 casts per dungeon? You're wasting massive mana.</p>
+<p><strong>How to stop overheal:</strong></p>
+<ul>
+<li>Watch the health bar actively</li>
+<li>Cast heals BEFORE they're needed, not after</li>
+<li>Use HoTs as a baseline (they tick slowly)</li>
+<li>Use instant heals only when health drops below 50%</li>
+</ul>
+<p><strong>The healer mantra:</strong> "Heal if they've taken damage. Don't heal if they're fine."</p>
+<p>Sounds obvious. Watch a new M+ healer and you'll see them spamming heals on someone at 90% health while the tank is about to die.</p>
+<h2>Cooldown Usage: Timing Matters More Than Frequency</h2>
+<p>This is where experienced M+ healers separate from average ones.</p>
+<p><strong>Bad healer:</strong> Uses cooldowns whenever available.</p>
+<p><strong>Good healer:</strong> Saves cooldowns for predictable spike damage.</p>
+<p><strong>Cooldown timing strategy:</strong></p>
+<ul>
+<li><strong>Identify spike moments</strong> (when do adds spawn? When does the boss cast? When do mechanics go off?)</li>
+<li><strong>Pre-place HoTs</strong> on whoever will take damage (5 seconds before)</li>
+<li><strong>Use cooldown DURING the spike</strong>, not before</li>
+<li><strong>Let cooldown reset</strong> before next major damage event</li>
+</ul>
+<p><strong>Example in practice:</strong></p>
+<ul>
+<li>Pull 4 trash mobs, estimate 8-second clear time</li>
+<li>You're fine, use only HoTs, no cooldowns</li>
+<li>Boss casts "Meteor Barrage" (hits everyone in 3 seconds)</li>
+<li>Cast HoT on everyone (takes 1 second)</li>
+<li>Pop Tranquility/Prayer of Mending/other AoE heal cooldown</li>
+<li>Meteor lands, raid is safe, you've used 1 cooldown</li>
+<li>Continue without cooldowns for next 40 seconds (let it reset)</li>
+</ul>
+<p>Wasting cooldowns on regular trash means you have NOTHING for the actually dangerous moments.</p>
+<h2>The Interrupt Economy: Saving Your Own Life</h2>
+<p>This is underrated: <strong>Interrupts are healing.</strong></p>
+<p>When you interrupt a mob's big spell:</p>
+<ul>
+<li>The damage doesn't happen</li>
+<li>You don't need to heal it</li>
+<li>Your mana stays full</li>
+<li>Healer stays alive</li>
+</ul>
+<p><strong>Learn what to interrupt:</strong></p>
+<ul>
+<li>Casts with big damage (red text in journal)</li>
+<li>Casts that cause effects (fear, stun, healing)</li>
+<li>Any cast that takes >2 seconds</li>
+</ul>
+<p>If you have an interrupt, USE IT.</p>
+<p><strong>Classes with good interrupts:</strong></p>
+<ul>
+<li>Priest: Silence (instant, requires discipline spec)</li>
+<li>Druid: Solar Beam (limited but strong)</li>
+<li>Shaman: Wind Shear (best healer interrupt)</li>
+<li>Paladin: Rebuke (limited range but strong)</li>
+</ul>
+<p>Use your interrupt proactively. That mana you save is healing you can do later.</p>
+<h2>The Five Types of Damage You'll See</h2>
+<p>Understanding damage types helps you prepare.</p>
+<p><strong>Type 1: Tank Damage (predictable)</strong></p>
+<ul>
+<li>The tank just pulled mobs</li>
+<li>You KNOW they're taking consistent damage</li>
+<li>Cast HoTs preemptively</li>
+<li>Heal when they drop below 70%</li>
+<li>This is easy to manage</li>
+</ul>
+<p><strong>Type 2: AoE Spike (pattern-based)</strong></p>
+<ul>
+<li>Mobs cast an ability that hits everyone</li>
+<li>You can see the cast bar</li>
+<li>Pre-cast heal before it lands</li>
+<li>Use cooldowns if health would drop too low</li>
+<li>Requires positioning awareness (are you in range?)</li>
+</ul>
+<p><strong>Type 3: Random Add Damage (chaotic)</strong></p>
+<ul>
+<li>An add spawned that you weren't ready for</li>
+<li>Someone gets focused by adds</li>
+<li>Instant heal that person</li>
+<li>Ask DPS to control adds</li>
+<li>This is why you need mana reserves</li>
+</ul>
+<p><strong>Type 4: Environmental Damage (avoidable)</strong></p>
+<ul>
+<li>Fire on the ground, poison clouds, etc.</li>
+<li>This is the player's fault, not yours</li>
+<li>Don't heal it if they're standing in it</li>
+<li>Move away and healing becomes unnecessary</li>
+<li>(This teaches people positioning)</li>
+</ul>
+<p><strong>Type 5: Boss Mechanics (scripted)</strong></p>
+<ul>
+<li>Boss casts something big</li>
+<li>You see the pattern</li>
+<li>Big heal + cooldown</li>
+<li>Prepare for pattern repeat</li>
+<li>Easiest to plan for</li>
+</ul>
+<h2>Gearing Your Healer: Stat Priority</h2>
+<p>This affects your healing performance MASSIVELY.</p>
+<p><strong>Stat priority for M+ healing:</strong></p>
+<ul>
+<li><strong>Intellect</strong> (primary stat, all healing scales from it)</li>
+<li><strong>Haste</strong> (more heals per second, less cast time)</li>
+<li><strong>Critical Strike</strong> (healing crits are big heals)</li>
+<li><strong>Versatility</strong> (damage reduction + healing increase)</li>
+<li><strong>Mastery</strong> (varies by class, usually last)</li>
+</ul>
+<p><strong>Why the order matters:</strong></p>
+<ul>
+<li>Intellect: 1% intellect = 1% more healing</li>
+<li>Haste: 1% haste = 1% faster casting = more heals per pull</li>
+<li>Crit: 1% crit = occasional big saves</li>
+<li>Versatility: Both offensive and defensive</li>
+<li>Mastery: Least efficient for M+ healing</li>
+</ul>
+<p><strong>Don't stack mastery.</strong> New healers do this because it sounds good. It isn't for M+.</p>
+<h2>The Healer Positioning That Keeps You Alive</h2>
+<p>Where you stand matters for survival.</p>
+<p><strong>Safe positioning:</strong></p>
+<ul>
+<li>Behind the tank (they block mobs)</li>
+<li>Near cover (pillars, walls, something to hide behind)</li>
+<li>Out of fire (environmental damage duh)</li>
+<li>In range of your whole team (usually 25+ yards)</li>
+<li>FAR from adds that are targeting you</li>
+</ul>
+<p><strong>Unsafe positioning:</strong></p>
+<ul>
+<li>In front of mobs (you're tanking)</li>
+<li>In melee with everyone (adds attack you)</li>
+<li>Standing in mechanics (your fault)</li>
+<li>Behind closed doors (range to tank is gone)</li>
+<li>Solo (can't be healed, can't be protected)</li>
+</ul>
+<p><strong>Rule of thumb:</strong> If enemies are looking at you, you've positioned wrong.</p>
+<h2>The Mental Game: When to "Let Them Die"</h2>
+<p>This is the hardest part psychologically.</p>
+<p>Your job is NOT to keep everyone alive.</p>
+<p>Your job is to keep the GROUP alive (tank + yourself).</p>
+<p>DPS standing in fire? Let them take damage. They'll move.</p>
+<p>Someone got feared? They take damage, they learn to position better.</p>
+<p>The rogue pulled an extra pack? They take extra damage, they learn to not do that.</p>
+<p><strong>If you heal every mistake, people never learn better play.</strong></p>
+<p>This is counterintuitive but true: The BEST M+ healers let people die occasionally to teach them lessons.</p>
+<p>Harsh? Maybe. Effective? Absolutely.</p>
+<h2>Class-Specific Healer Strategies</h2>
+<h3>Restoration Druid</h3>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Instant cast (Healing Touch)</li>
+<li>HoT spam (Rejuvenation)</li>
+<li>Mana efficient (Lifebloom is broken good)</li>
+</ul>
+<p><strong>M+ Strategy:</strong></p>
+<ul>
+<li>Lifebloom on tank (always)</li>
+<li>Rejuvenation on whoever takes damage</li>
+<li>Wild Growth for AoE</li>
+<li>Tranquility for big spikes</li>
+<li>Play around Mana pool (Druids have lower mana)</li>
+</ul>
+<h3>Holy Priest</h3>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Range healing (50 yards)</li>
+<li>Instant cast (Prayer of Mending)</li>
+<li>Strong AoE (Holy Word: Serenity)</li>
+</ul>
+<p><strong>M+ Strategy:</strong></p>
+<ul>
+<li>Prayer of Mending on tank (bounce healing)</li>
+<li>Renew on whoever takes consistent damage</li>
+<li>Holy Word for burst moments</li>
+<li>Divine Hymn for panic heals</li>
+<li>Play around Holy Words (cooldown management)</li>
+</ul>
+<h3>Restoration Shaman</h3>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Instant heal (Healing Surge)</li>
+<li>HoT on teammates (Riptide)</li>
+<li>Offensive healing (Earth Shield)</li>
+</ul>
+<p><strong>M+ Strategy:</strong></p>
+<ul>
+<li>Earth Shield on tank (passive healing)</li>
+<li>Riptide on whoever's taking damage</li>
+<li>Healing Rain for AoE pulls</li>
+<li>Healing Tide for emergencies</li>
+<li>Play around cooldowns (everything is on CD)</li>
+</ul>
+<h3>Holy Paladin</h3>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Burst healing (Flash of Light)</li>
+<li>Group healing (Holy Light bounces)</li>
+<li>Defense (can wear plate armor)</li>
+</ul>
+<p><strong>M+ Strategy:</strong></p>
+<ul>
+<li>Holy Light spam (main heal)</li>
+<li>Holy Word for burst</li>
+<li>Beacon of Light on tank (passive healing while you heal others)</li>
+<li>Avenging Wrath for damage output</li>
+<li>Play around mana + Holy Power</li>
+</ul>
+<h2>The Mana Math: How to Know When You're In Trouble</h2>
+<p>If you hit 30% mana during active trash pulls, you're in trouble SOON.</p>
+<p><strong>Mana recovery times:</strong></p>
+<ul>
+<li>Out of combat: 5 seconds per 5% mana</li>
+<li>In combat with HoTs: 2-3 seconds per 5% mana</li>
+<li>In combat with spam heals: You're not recovering</li>
+</ul>
+<p><strong>When to panic:</strong></p>
+<ul>
+<li>Mana <20%: Stop healing, only HoTs, let people self-heal</li>
+<li>Mana <10%: You're done, hope the trash dies before you're OOM</li>
+<li>Mana 0%: Your tank dies in 3 seconds</li>
+</ul>
+<p><strong>Prevention:</strong> Don't let mana drop below 40% during trash pulls. It's a mistake.</p>
+<h2>Common M+ Healer Mistakes</h2>
+<p><strong>Mistake 1: Healing someone at full health</strong></p>
+<p>Overheal = wasted mana. Let them sit at 70% if they're safe.</p>
+<p><strong>Mistake 2: Using big heals in M+</strong></p>
+<p>Instant + HoT healing is superior. Big heals waste mana.</p>
+<p><strong>Mistake 3: Not interrupting</strong></p>
+<p>An interrupt is worth 5 heals. Use them.</p>
+<p><strong>Mistake 4: Positioning in melee</strong></p>
+<p>You die = wipe. Stay ranged.</p>
+<p><strong>Mistake 5: Popping all cooldowns at once</strong></p>
+<p>Spread them out. You need them later.</p>
+<p><strong>Mistake 6: Not communicating with your tank</strong></p>
+<p>Tell them if their pull is too big. They should adjust.</p>
+<p><strong>Mistake 7: Blaming DPS for taking damage</strong></p>
+<p>Some damage is mechanic-based (their fault). Some is your rotation being bad. Own your mistakes.</p>
+<h2>The Healing Rotation For Each Situation</h2>
+<h3>Trash Pull (4-6 mobs, 25-35 second duration)</h3>
+<p><strong>Spell sequence:</strong></p>
+<ul>
+<li>HoT on tank as pull starts</li>
+<li>Spam HoT/instant heals as needed</li>
+<li>Single-target heals on whoever's taking most damage</li>
+<li>AoE heal if whole group drops (rare)</li>
+<li>Damage-cast if group is stable</li>
+<li>Reapply HoTs as they expire</li>
+</ul>
+<p><strong>Mana used:</strong> 30-45%</p>
+<p><strong>Cooldown spent:</strong> None usually</p>
+<h3>Boss Fight (Single target, 1-3 minutes)</h3>
+<p><strong>Spell sequence:</strong></p>
+<ul>
+<li>HoT on tank pre-pull</li>
+<li>Tank damage is predictable, heal when health drops</li>
+<li>Phase changes = mechanic heals</li>
+<li>Use cooldowns on big phase damage spikes</li>
+<li>Damage-cast on off-moments</li>
+<li>Repeat cooldown use on subsequent phases</li>
+</ul>
+<p><strong>Mana used:</strong> 50-70%</p>
+<p><strong>Cooldown spent:</strong> 1-2 major cooldowns</p>
+<h3>Multi-Pack Pull (8+ mobs, chaotic, 40-60 seconds)</h3>
+<p><strong>Spell sequence:</strong></p>
+<ul>
+<li>AoE HoT on everyone immediately</li>
+<li>Triage healing (1 person at a time, pick highest damage-taker)</li>
+<li>Let off-targets float at 50% health</li>
+<li>Use 1 big cooldown midway through</li>
+<li>Spam instant heals and HoTs</li>
+<li>Survival mode (don't run out of mana)</li>
+<li>Breathe when pull ends</li>
+</ul>
+<p><strong>Mana used:</strong> 70-85% (DANGEROUS)</p>
+<p><strong>Cooldown spent:</strong> 1 major cooldown</p>
+<h2>The Accelerated Healer Journey</h2>
+<p>If you're struggling with healing even after reading this, you're not alone. M+ healing has a learning curve.</p>
+<p>The fastest way to improve isn't reading guides—it's watching experienced healers do it in real-time. You see their decision-making, their cooldown timing, their positioning choices.</p>
+<p><a href="https://koroboost.com/wow-midnight/mythic-plus">There are M+ healer services where you can group with professionals and learn their approach firsthand</a>. Watching a 2.5k rated healer manage mana and cooldowns is a masterclass.</p>
+<h2>The Real Talk</h2>
+<p>M+ healing is hard, but not because of mechanics. It's hard because you're managing mana, cooldowns, positioning, interrupts, and triage simultaneously.</p>
+<p>Master these fundamentals:</p>
+<ul>
+<li>Use HoTs efficiently</li>
+<li>Manage mana ruthlessly</li>
+<li>Time cooldowns perfectly</li>
+<li>Interrupt aggressively</li>
+<li>Position defensively</li>
+</ul>
+<p>Do those five things well, and suddenly you're the healer that never dies and always has mana at the end of the run.</p>
+<p>That's the difference between struggling and thriving.</p>
+        <div class="cta-box">
+            <a href="https://koroboost.com" class="cta">Visit Koroboost</a>
+        </div>
+    </div>
+    <footer>
+        <p><a href="index.html">All Guides</a> | <a href="https://koroboost.com">Koroboost.com</a></p>
+    </footer>
+</body>
+</html>
